@@ -14,7 +14,7 @@ linestyles = ['-', '--', '-.', ':', (0, (3, 5, 1, 5)), (0, (5, 10))]
 
 def plot_gen(name):
     # Find relevant ReFrame output files
-    file_list = glob.glob(f'output/aion/batch/eessi/osu_{name}_*/*.out')
+    file_list = glob.glob(f'output/*/batch/eessi/osu_{name}_*/*.out')
     if len(file_list) == 0:
         raise ValueError(f"There is no .out file in output/aion/batch/eessi/osu_{name}_*/\n" \
         "or Defined the right searching style to find .out files")

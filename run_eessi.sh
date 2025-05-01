@@ -32,5 +32,5 @@ reframe -C ./config/eessi_config.py -c ./reframe/eessi/osu_eessi.py -r
 
 module load lang/Anaconda3/2020.11
 
-python plot_gen.py
+python eessi_plot.py
 
