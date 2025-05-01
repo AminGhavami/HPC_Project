@@ -28,7 +28,7 @@ module load Python/3.11.5-GCCcore-13.2.0
 # vim reframe/eessi/osu_eessi_tests.py
 
 # pyton code is in folder
-reframe -C ./config.py -c ./reframe/eessi/osu_eessi_tests.py -r
+reframe -C ./config/eessi_config.py -c ./reframe/eessi/osu_eessi.py -r
 
 module load lang/Anaconda3/2020.11
 
