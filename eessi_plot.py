@@ -44,7 +44,7 @@ def plot_gen(name):
     plt.grid(True, which="both", linestyle="--", linewidth=0.5)
 
     # Save plot
-    plt.savefig(f'osu_{name}_comparison.png')
+    plt.savefig(f'results/osu_{name}_comparison.png')
     plt.show()
 
 

@@ -21,6 +21,8 @@ All tests are automated and managed using the [ReFrame](https://reframe-hpc.read
 
 ## Repository Structure
 
+-EESSI Environment:
+    By running run_eessi.sh on Aion or IRIS cluster, necessary modules will loaded and tests will run. At the end, two "png" files to compare "latency" and "bandwidth" performance across different CPU/memory topologies will be generated in results folder.
 ## Collaborators
 - Asal Ashraf
 - Vaibhav Mangroliya
