@@ -20,8 +20,10 @@ All tests are automated and managed using the [ReFrame](https://reframe-hpc.read
 ---
 
 ## Repository Structure
+- EasyBuild:
+    By running run_easybuild.sh on Aion cluster and hupfully on IRIS, needed modules will loaded and tests will run. easybuild_plot.py doesn't work due to changes on UNILUHPS and I couldn't find Anaconda3!
 
--EESSI Environment:
+- EESSI Environment:
     By running run_eessi.sh on Aion or IRIS cluster, necessary modules will loaded and tests will run. At the end, two "png" files to compare "latency" and "bandwidth" performance across different CPU/memory topologies will be generated in results folder.
 ## Collaborators
 - Asal Ashraf
