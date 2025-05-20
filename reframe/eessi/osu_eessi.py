@@ -28,6 +28,8 @@ class osu_latency_same_core(BaseOsuTest):
     @run_before('run')
     def set_job_opts(self):
         self.job.options = ['--nodes=1', '--ntasks=2', '--ntasks-per-node=2', '--cpus-per-task=1']
+        self.prerun_cmds += ['numactl -C 0,0 -l']  # Pin both to same core
+
 
     @sanity_function
     def validate_output(self):
@@ -101,6 +103,8 @@ class osu_bw_same_core(BaseOsuTest):
     @run_before('run')
     def set_job_opts(self):
         self.job.options = ['--nodes=1', '--ntasks=2', '--ntasks-per-node=2', '--cpus-per-task=1']
+        self.prerun_cmds += ['numactl -C 0,0 -l']  # Pin both to same core
+
 
     @sanity_function
     def validate_output(self):

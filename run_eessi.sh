@@ -30,7 +30,7 @@ module load Python/3.11.5-GCCcore-13.2.0
 # pyton code is in folder
 reframe -C ./config/eessi_config.py -c ./reframe/eessi/osu_eessi.py -r
 
-module load lang/Anaconda3/2020.11
+# module load lang/Anaconda3/2020.11
 
-python eessi_plot.py
+# python eessi_plot.py
 

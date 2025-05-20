@@ -6,7 +6,7 @@ from reframe.core.pipeline import RunOnlyRegressionTest
 
 class BaseOsuTest(RunOnlyRegressionTest):
     valid_systems = ['aion:batch', 'iris:batch']
-    valid_prog_environs = ['easybuild']
+    valid_prog_environs = ['local']
     time_limit = '10m'
     exclusive_access = True
 
