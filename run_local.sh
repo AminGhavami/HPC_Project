@@ -5,7 +5,7 @@ module purge
 echo "Loading Local modules..."
 
 # Load EasyBuild toolchain and required software
-module load env/testing/2023
+module load env/testing/2023b
 module load perf/OSU-Micro-Benchmarks/7.2-gompi-2023b
 module load devel/ReFrame/4.7.4-GCCcore-13.2.0
 module load lang/Python/3.11.5-GCCcore-13.2.0
